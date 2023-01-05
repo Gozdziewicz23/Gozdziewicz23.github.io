@@ -1,0 +1,14 @@
+/* Richard Davies, Data Science for Economists */
+.myWeek1{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(220, 220, 220);
+
+      
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(100,100,100);
+}
+    
+
