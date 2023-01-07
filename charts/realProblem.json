@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Real problem for many countries",
+  "description": "Countries whose governments declare that their goal is to raise fertility",
   "title": {
-    "text": "Real problem for many countries",
+    "text": "Countries whose governments declare that their goal is to raise fertility",
     "subtitle": "Quick description - removable",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -20,26 +20,11 @@
   "transform": [
     {
       "filter": "datum['Policy on fertility level'] == 'Raise'"
-    },
-    {
-      "calculate": "datum.Region === 'Africa' ? 'Africa' : datum.Region === 'Asia' ? 'Asia' : datum.Region === 'Europe' ? 'Europe' : datum.Region === 'Latin Amer. & Caribbean' ? 'Latin Amer. & Caribbean' : datum.Region === 'Northern America' ? 'Northern America' : 'Oceania'",
-      "as": "Region"
-    },
-    {
-      "aggregate": [
-        {
-          "op": "sum",
-          "field": "Country name",
-          "as": "country_count"
-        }
-      ],
-      "groupby": [
-        "Region"
-      ]
     }
   ],
   "mark": {
-    "type": "bar"
+    "type": "bar",
+    "tooltip": true
   },
   "encoding": {
     "x": {
@@ -47,8 +32,15 @@
       "type": "nominal",
       "title": "Year"
     },
+    "y": {
+      "field": "Policy on fertility level",
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Number of countries"
+    },
     "color": {
-      "field": "Region"
+      "field": "Region",
+      "type": "nominal"
     }
   }
 }
