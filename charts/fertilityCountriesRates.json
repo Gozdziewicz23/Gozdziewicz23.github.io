@@ -10,9 +10,10 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/data/fertilityCountriesRates.csv",
+    "url": "https://api.worldbank.org/v2/country/de;pl;fr;irl;es;ita;dk;swe/indicator/SP.DYN.TFRT.IN?&per_page=1000&format=json",
     "format": {
-      "type": "csv"
+      "type": "json",
+      "property": "1"
     }
   },
   "height": 400,
@@ -26,17 +27,17 @@
   },
   "encoding": {
     "x": {
-      "field": "Time",
+      "field": "date",
       "type": "temporal",
       "title": "Year"
     },
     "y": {
-      "field": "Value",
+      "field": "value",
       "type": "quantitative",
       "title": "Fertility rate"
     },
     "color": {
-      "field": "Country Name",
+      "field": "country.value",
       "type": "nominal",
       "legend": null
     }

@@ -10,9 +10,10 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/data/fertilityRatePoland.csv",
+    "url": "https://api.worldbank.org/v2/country/pl/indicator/SP.DYN.TFRT.IN?date=2000:2050&per_page=150&format=json",
     "format": {
-      "type": "csv"
+      "type": "json",
+      "property": "1"
     }
   },
   "height": 400,
@@ -23,22 +24,22 @@
         "type": "line",
         "point": true,
         "interpolate": "monotone",
-        "color": "blueviolet",
+        "color": "greenyellow",
         "tooltip": true
       },
       "encoding": {
         "x": {
-          "field": "Time",
+          "field": "date",
           "type": "temporal",
           "title": "Year"
         },
         "y": {
-          "field": "Value",
+          "field": "value",
           "type": "quantitative",
           "title": "Fertility rate"
         },
         "color": {
-          "field": "Country Name",
+          "field": "country.value",
           "type": "nominal",
           "legend": null
         }
