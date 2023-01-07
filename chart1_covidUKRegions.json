@@ -13,8 +13,8 @@
     "anchor": "start",
     "color": "black"},
 
-  "height": 300,
-  "width": 280,
+  "height": 400, 
+    "width": "container",
   
   "mark": {"type": "bar", "width":10},
   
