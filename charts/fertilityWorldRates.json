@@ -18,6 +18,9 @@
   },
   "height": 400,
   "width": "container",
+  "autosize": {
+    "type": "fit"
+  },
   "mark": "geoshape",
   "projection": {
     "type": "naturalEarth1"
@@ -27,7 +30,7 @@
       "lookup": "properties.name",
       "from": {
         "data": {
-          "url": "../data/fertilityWorldRates.csv",
+          "url": "../data/fertilityWorldRates2.csv",
           "format": {
             "type": "csv"
           }
@@ -46,11 +49,11 @@
   "params": [
     {
       "name": "selectedYear",
-      "value": 2020,
+      "value": 2021,
       "bind": {
         "input": "range",
-        "min": 1990,
-        "max": 2020,
+        "min": 1960,
+        "max": 2021,
         "step": 1,
         "name": "Year:"
       }
@@ -62,8 +65,8 @@
       "type": "quantitative",
       "legend": {
         "title": "Fertility rate",
-        "orient": "right",
-        "direction": "vertical"
+        "orient": "bottom",
+        "direction": "horizontal"
       },
       "scale": {
         "scheme": "yelloworangebrown"
