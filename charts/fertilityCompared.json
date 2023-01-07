@@ -14,7 +14,7 @@
   "layer": [
     {
       "data": {
-        "url": "../data/totalPublicExpenditure.csv",
+        "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/data/totalPublicExpenditure.csv",
         "format": {
           "type": "csv"
         }
@@ -41,7 +41,7 @@
     },
     {
       "data": {
-        "url": "../data/polGerFraFertilityRate.csv",
+        "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/data/polGerFraFertilityRate.csv",
         "format": {
           "type": "csv"
         }

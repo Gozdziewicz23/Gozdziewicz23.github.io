@@ -10,7 +10,7 @@
     "color": "black"
   },
   "data": {
-    "url": "../data/realProblem.csv",
+    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/data/realProblem.csv",
     "format": {
       "type": "csv"
     }
