@@ -10,10 +10,9 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json",
+    "url": "../data/fertilityWorldRates2.csv",
     "format": {
-      "type": "topojson",
-      "feature": "countries1"
+      "type": "csv"
     }
   },
   "height": 400,
@@ -27,18 +26,20 @@
   },
   "transform": [
     {
-      "lookup": "properties.name",
+      "lookup": "Country Name",
       "from": {
         "data": {
-          "url": "../data/fertilityWorldRates2.csv",
+          "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json",
           "format": {
-            "type": "csv"
+            "type": "topojson",
+            "feature": "countries1"
           }
         },
-        "key": "Country Name",
+        "key": "properties.name",
         "fields": [
-          "Time",
-          "Value"
+          "properties",
+          "type",
+          "geometry"
         ]
       }
     },
