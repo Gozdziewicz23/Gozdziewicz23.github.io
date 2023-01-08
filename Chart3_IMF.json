@@ -2,7 +2,7 @@
 
 "title": {
     "text": "IMF Lending ",
-    "subtitle":"Loans disbursed ($bn)",
+    "subtitle":"Total Loans",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
