@@ -1,6 +1,4 @@
-  var chartENV1 =
-
-{
+ {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Carbon per capita by country",
 
@@ -43,7 +41,4 @@
       {"field": "Country"}
     ]
   }
-};
-
-
-vegaEmbed('#chartENV1', chartENV1, {"actions": false});
+}
