@@ -13,7 +13,7 @@
   },
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/m3BankRate.csv"},
+    "url": "https://github.com/Gozdziewicz23/Gozdziewicz23.github.io/blob/main/nasdaq-historical-chart.csv"},
   "height": 400,
   "width": "container",
   "mark": {
@@ -23,11 +23,11 @@
     "color": "red"
   },
 
-  "encoding": {"x": {"field": "Date", "type": "temporal", "title":null}},
+  "encoding": {"x": {"field": "date", "type": "temporal", "title":null}},
  
   "layer": [
     {"encoding": {
-        "y": {"field": "Rate", 
+        "y": {"field": "value", 
               "type": "quantitative", 
               "title":null}},
         
