@@ -12,7 +12,7 @@
     }
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv"},
+    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv",
     "format": {
       "type": "json",
       "property": "1"
@@ -39,14 +39,8 @@
           "field": "value",
           "type": "quantitative",
           "title": "NASDAQ Composite value"
-        },
-        "color": {
-          "field": "country.field",
-          "type": "nominal",
-          "legend": null
-       
-          }
         }
       }
+    }
   ]
-
+}
