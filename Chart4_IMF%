@@ -1,0 +1,37 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+"title": {
+    "text": "IMF Lending as a %",
+    "subtitle":"Outstanding Credit as a % of GDP ($bn)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+"data":{"url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/IMF_TOTAL.csv"},
+
+"height": 400,
+"width": "container",
+
+"mark": {
+  "type": "bar",
+  "color": "red"},
+
+"encoding": {
+   "x": {
+     "field": "Year",
+     "type": "temporal",
+     "axis": {
+       "title": null,
+       "grid": false,
+       "ticks": false,
+       "labelAngle": 45}},
+
+    "y": {
+      "field": "Debt_to_GDP_Ratio",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}}
+}
+}
