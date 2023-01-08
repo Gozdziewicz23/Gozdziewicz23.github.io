@@ -29,7 +29,7 @@
        "labelAngle": 45}},
 
     "y": {
-      "field": "Debt_to_GDP_Ratio",
+      "field": "Debt_to_GDP_Ratio(%)",
       "type": "quantitative",
       "title": "",
       "axis": {"grid": false}}
