@@ -7,7 +7,10 @@
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
-    "color": "black"
+    "color": "black",
+    "limit": {
+      "expr": "screen().width"
+    }
   },
   "data": {
     "url": "https://api.worldbank.org/v2/country/pl/indicator/SP.DYN.TFRT.IN?date=2000:2050&per_page=150&format=json",
