@@ -39,6 +39,8 @@
           "field": "value",
           "type": "quantitative",
           "title": "NASDAQ Composite value"
+          "scale": {
+      "range": [0, 5000]
         }
       }
     }
