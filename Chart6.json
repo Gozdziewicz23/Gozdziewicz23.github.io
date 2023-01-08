@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Changes in Fertility Rates",
+  "description": "Changes in Fertility Rates - World",
   "title": {
-  
-    "subtitle": "Changes in Fertility Rates",
+    "text": "Changes in Fertility Rates - World",
+    "subtitle": "Quick description - removable",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -13,36 +13,80 @@
     }
   },
   "data": {
-    "url": "https://api.worldbank.org/v2/country/de;pl;fr;irl;es;ita;dk;swe/indicator/SP.DYN.TFRT.IN?&per_page=1000&format=json",
+    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/data/fertilityWorldRates2.csv",
     "format": {
-      "type": "json",
-      "property": "1"
+      "type": "csv"
     }
   },
   "height": 400,
   "width": "container",
-  "mark": {
-    "type": "line",
-    "point": true,
-    "interpolate": "monotone",
-    "color": "blueviolet",
-    "tooltip": true
+  "autosize": {
+    "type": "fit"
   },
-  "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": "Year"
+  "mark": "geoshape",
+  "projection": {
+    "type": "naturalEarth1"
+  },
+  "transform": [
+    {
+      "lookup": "Country Name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json",
+          "format": {
+            "type": "topojson",
+            "feature": "countries1"
+          }
+        },
+        "key": "properties.name",
+        "fields": [
+          "properties",
+          "type",
+          "geometry"
+        ]
+      }
     },
-    "y": {
-      "field": "value",
-      "type": "quantitative",
-      "title": "Fertility rate"
-    },
-    "color": {
-      "field": "country.value",
-      "type": "nominal",
-      "legend": null
+    {
+      "filter": "datum.Time == selectedYear"
     }
+  ],
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1960,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "type": "quantitative",
+      "legend": {
+        "title": "Fertility rate",
+        "orient": "bottom",
+        "direction": "horizontal"
+      },
+      "scale": {
+        "scheme": "yelloworangebrown"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.name",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Fertility rate"
+      }
+    ]
   }
 }
