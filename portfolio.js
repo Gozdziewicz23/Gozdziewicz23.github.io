@@ -1,5 +1,5 @@
 //Define charts:
-var myChart1 = "chart1_covidUKRegions.json";
+var myChart1 = "chart1_football.json";
 var myChart2 = "chart2_ukProductivity.json";
 
 // Embed charts:
