@@ -38,7 +38,10 @@
         "color": {
           "field": "Country",
           "type": "nominal",
-          "legend": null
+          "legend": null,
+          "scale": {
+            "scheme": "lighttealblue"
+          }
         }
       }
     },
@@ -65,7 +68,10 @@
         "color": {
           "field": "Country",
           "type": "nominal",
-          "legend": null
+          "legend": null,
+          "scale": {
+            "scheme": "darkblue"
+          }
         }
       }
     }
@@ -79,7 +85,8 @@
   },
   "resolve": {
     "scale": {
-      "y": "independent"
+      "y": "independent",
+      "color": "independent"
     }
   }
 }
