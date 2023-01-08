@@ -9,7 +9,7 @@
     "color": "black"
   },
 
-"data":{"url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/data_IMF.csv"},
+"data":{"url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/IMF_TOTAL.csv"},
 
 "height": 300,
 "width": 300,
@@ -29,7 +29,7 @@
        "labelAngle": 45}},
 
     "y": {
-      "field": "Total_billion",
+      "field": "Totals",
       "type": "quantitative",
       "title": "",
       "axis": {"grid": false}}
