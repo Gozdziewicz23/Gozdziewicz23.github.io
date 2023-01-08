@@ -15,6 +15,21 @@
       "type": "quantitative",
       "title": "NASDAQ Composite value"
     }
-  }
+  },
+  "title": {
+    "text": "NASDAQ Composite Index",
+    "fontSize": 20,
+    "anchor": "start"
+  },
+  "axis": {
+    "grid": true,
+    "labelFontSize": 14
+  },
+  "legend": {
+    "title": "",
+    "labelFontSize": 14
+  },
+  "height": 400,
+  "width": "container"
 }
-    
+
