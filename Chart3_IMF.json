@@ -11,8 +11,8 @@
 
 "data":{"url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/IMF_TOTAL.csv"},
 
-"height": 300,
-"width": 300,
+"height": 400,
+"width": "container",
 
 "mark": {
   "type": "bar",
