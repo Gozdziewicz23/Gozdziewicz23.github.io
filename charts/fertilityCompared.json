@@ -40,7 +40,7 @@
           "type": "nominal",
           "legend": null,
           "scale": {
-            "scheme": "lighttealblue"
+            "range": ["#ffcccb", "#9fb7f9", "#a8ffcb"]
           }
         }
       }
@@ -70,7 +70,7 @@
           "type": "nominal",
           "legend": null,
           "scale": {
-            "scheme": "darkblue"
+            "range": ["#ff0a05", "#0e4bef", "#11df64"]
           }
         }
       }
