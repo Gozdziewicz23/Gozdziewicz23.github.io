@@ -7,8 +7,8 @@
     "anchor": "start",
     "color": "black"
   },
-"height": 300,
-"width": 250,
+"height": 400,
+"width": "container",
 "data": {
   "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV20.csv"
 },
