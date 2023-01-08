@@ -18,6 +18,7 @@
   "width": "container",
   "mark": {
     "type": "line",
+    "smooth": true
     "point": false,
     "interpolate": "step",
     "color": "red"
