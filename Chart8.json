@@ -13,7 +13,7 @@
   },
   
   "data": {
-    "url": "https://github.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv"},
+    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv"},
   "height": 400,
   "width": "container",
   "mark": {
@@ -53,14 +53,14 @@
            "value": 0
              },
           "tooltip": [
-          {"field": "Date", "type": "temporal", "format": "%b-%Y", "title":"Date"},  
-          {"field": "Rate", "type": "quantitative", "format": ",.0f", "title":"Bank Rate (%)"}
+          {"field": "date", "type": "temporal", "format": "%b-%Y", "title":"date"},  
+          {"field": "value", "type": "quantitative", "format": ",.0f", "title":"NASDAQ Value"}
             ]
            },
       "selection": {
         "hover": {
           "type": "single",
-          "fields": ["Date"],
+          "fields": ["date"],
           "nearest": true,
           "on": "mouseover",
           "empty": "none",
