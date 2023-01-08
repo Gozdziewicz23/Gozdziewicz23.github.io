@@ -1,36 +1,53 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-
- "title": {
-  "text": "Tech Bubble",
-  "subtitle":"NASDAQ Composite",
-  "subtitleFontStyle":"italic",
-  "subtitleFontSize":10,
-  "anchor": "start",
-  "color": "black",
-  "subtitleColor":"black"},
-
-"config": {
-  "background":"white",
-  "view": {
-    "stroke": "transparent"}},
-
-
-
-  "width":"container",
-  "height":400,
-
-
-  "data": {
-    "name":"myData",
-    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv"},
-
-
-  "mark": {
-  "type": "line",
-  "point": false,
-  "interpolate": "linear",
-  "color":"red"
+  "description": "Cash Benefits solution",
+  "title": {
+    "text": "Cash Benefits solution",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black",
+    "limit": {
+      "expr": "screen().width"
     }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv"},
+    "format": {
+      "type": "json",
+      "property": "1"
+    }
+  },
+  "height": 400,
+  "width": "container",
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "interpolate": "monotone",
+        "color": "greenyellow",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "NASDAQ Composite value"
+        },
+        "color": {
+          "field": "country.field",
+          "type": "nominal",
+          "legend": null
+       
+          }
+        }
       }
+    }
+  ]
+}
