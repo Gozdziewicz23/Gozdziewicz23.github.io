@@ -3,8 +3,8 @@ var myChart1 = "chart1_ENV.json";
 var myChart2 = "chart2_Species.json";
 var myChart3 = "Chart3_IMF.json";
 var myChart4 = "Chart4_IMF%.json";
-var myChart5 = "Chart5_.json";
-var myChart6 = "Chart6_.json";
+var myChart5 = "Chart5.json";
+var myChart6 = "Chart6.json";
 var myChart7 = "Chart7.json";
 var myChart8 = "Chart8.json";
 
