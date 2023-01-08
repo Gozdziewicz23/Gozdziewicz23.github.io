@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "IMF Lending ",
-    "subtitle": "Total Loans",
+    "text": "Ratio",
+    "subtitle": "IMF Lending as % GDP",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
