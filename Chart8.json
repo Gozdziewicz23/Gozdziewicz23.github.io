@@ -21,10 +21,13 @@
   
  "encoding": {
     "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": "Year"
-    },
+     "x": {
+  "field": "date",
+  "type": "temporal",
+  "timeUnit": "year",
+  "title": "Year",
+  "format": "year"
+},
     "y": {
       "field": "value",
       "type": "quantitative",
