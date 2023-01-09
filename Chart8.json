@@ -1,20 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "values": [
-      {"date": "1994", "value": 777.490},
-      {"date": "1995", "value": 755.200},
-      {"date": "1996", "value": 1059.790},
-      {"date": "1997", "value": 1379.850},
-      {"date": "1998", "value": 1619.360},
-      {"date": "1999", "value": 2505.890},
-      {"date": "2000", "value": 3940.350},
-      {"date": "2001", "value": 2772.730},
-      {"date": "2002", "value": 1934.030},
-      {"date": "2003", "value": 1320.910},
-      {"date": "2004", "value": 2066.150},
-      {"date": "2005", "value": 2062.410}
-    ]
+   "data": {
+    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv.csv"
+ 
   },
   "mark": "line",
   "encoding": {
