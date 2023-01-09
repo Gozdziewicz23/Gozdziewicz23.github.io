@@ -5,18 +5,13 @@
     "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv",
     "format": {
       "type": "csv",
-      "parse": {
-        "date": "date:'%Y-%m-%d'"
-      }
+      
     }
   },
   "mark": "line",
   
-  "transform": [
-    {
-      "calculate": "toDate(datum.date)",
-      "as": "date"
-    }
+
+  
   ],
   
   "encoding": {
