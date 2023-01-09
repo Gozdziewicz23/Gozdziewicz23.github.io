@@ -20,13 +20,14 @@
   ],
   
  "encoding": {
-    "x": {
-     "x": {
+   "x": {
   "field": "date",
   "type": "temporal",
   "timeUnit": "year",
   "title": "Year",
-  "format": "year"
+  "format": "utcyear"
+},
+
 },
     "y": {
       "field": "value",
