@@ -1,7 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv"
+  
+ "data": {
+    "url": "https://raw.githubusercontent.com/Gozdziewicz23/Gozdziewicz23.github.io/main/nasdaq-historical-chart.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "date": "date:'%Y-%m-%d'"
+      }
+    }
   },
   "mark": "line",
   "encoding": {
@@ -14,6 +21,11 @@
       "field": "value",
       "type": "quantitative",
       "title": "NASDAQ Composite value"
+     }
+    "color": {
+  "field": "country",
+  "type": "nominal",
+  "legend": null
     }
   },
   "title": {
@@ -31,5 +43,11 @@
   },
   "height": 400,
   "width": "container"
+  
+  "transform": [
+    {
+      "calculate": "toDate(datum.date)",
+      "as": "date"
+    }
+  ]
 }
-
