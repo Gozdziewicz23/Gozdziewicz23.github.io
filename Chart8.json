@@ -11,7 +11,15 @@
     }
   },
   "mark": "line",
-  "encoding": {
+  
+  "transform": [
+    {
+      "calculate": "toDate(datum.date)",
+      "as": "date"
+    }
+  ],
+  
+ "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
@@ -21,7 +29,7 @@
       "field": "value",
       "type": "quantitative",
       "title": "NASDAQ Composite value"
-     }
+    },
     "color": {
   "field": "country",
   "type": "nominal",
@@ -44,10 +52,7 @@
   "height": 400,
   "width": "container"
   
-  "transform": [
-    {
-      "calculate": "toDate(datum.date)",
-      "as": "date"
+
     }
   ]
 }
