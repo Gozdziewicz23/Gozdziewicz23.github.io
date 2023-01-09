@@ -19,25 +19,18 @@
     }
   ],
   
- "encoding": {
-   "x": {
-  "field": "date",
-  "type": "temporal",
-  "timeUnit": "year",
-  "title": "Year",
-  "format": "utcyear"
-},
-
-},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "timeUnit": "year",
+      "title": "Year",
+      "format": "utcyear"
+    },
     "y": {
       "field": "value",
       "type": "quantitative",
       "title": "NASDAQ Composite value"
-    },
-    "color": {
-  "field": "country",
-  "type": "nominal",
-  "legend": null
     }
   },
   "title": {
@@ -54,8 +47,6 @@
     "labelFontSize": 14
   },
   "height": 400,
-  "width": "container"
-  
+  "width": 800
+}
 
-    }
-  
